@@ -1,0 +1,14 @@
+<h2>Bearbeitung</h2>
+<ul class="list-group-item" *ngFor="let word of lis " >
+
+  <div class="list-group-item-success">
+         <!-- i = {{word.id}} -->
+    <h1>{{word.description}}</h1>
+    <p> {{word.link}}</p>
+
+    <button type="button" class="btn btn-danger"(click)="ondelet(word.id)">Delete</button>
+    <button type="button" class="btn btn-primary"(click)="onselet(word.id)">select</button>
+  </div>
+
+</ul>
+<button type="button" class="btn btn-primary"(click)="ngOnInit()">neu Laden</button>
