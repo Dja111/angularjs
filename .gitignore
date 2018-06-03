@@ -38,8 +38,4 @@ testem.log
 .DS_Store
 Thumbs.db
 
-#new file
-.tslint.json
-.tsconfig.json
-.editorconfig
-tsconfig.json
+
