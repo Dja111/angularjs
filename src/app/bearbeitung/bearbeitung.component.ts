@@ -1,33 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import {ListeService} from "../liste.service";
-import {BearbeitungService} from "../bearbeitung.service";
-import { Liste} from "../liste";
+import { Component, OnInit } from "@angular/core";
+import { ListeService } from "../liste.service";
+import { BearbeitungService } from "../bearbeitung.service";
+import { Liste } from "../liste";
 
 @Component({
-  selector: 'app-bearbeitung',
-  templateUrl: './bearbeitung.component.html',
-  styleUrls: ['./bearbeitung.component.scss'],
+  selector: "app-bearbeitung",
+  templateUrl: "./bearbeitung.component.html",
+  styleUrls: ["./bearbeitung.component.scss"],
   providers: [BearbeitungService]
 })
 export class BearbeitungComponent implements OnInit {
-
-  lis1 : Liste;
+  lis1: Liste;
   lis: Array<any>;
 
-  constructor(private bear : BearbeitungService) { }
+  constructor(private bear: BearbeitungService) {}
 
   ngOnInit() {
-    this.bear.getAll().subscribe( data => {
+    this.bear.getAll().subscribe(
+      data => {
         this.lis = data;
-      }, error => console.log(error)
+      },
+      error => console.log(error)
     );
   }
-  ondelet(i: number){
+  ondelet(i: number) {
     //console.log(i);
     this.bear.delet(i).subscribe();
   }
 
-  onselet(i: number){
+  onselet(i: number) {
     console.log(i);
     this.bear.select(i).subscribe();
 
@@ -40,12 +41,12 @@ export class BearbeitungComponent implements OnInit {
 
   //onput(i:)
 
-  getAll(){
-    this.bear.getAll().subscribe( data => {
+  getAll() {
+    this.bear.getAll().subscribe(
+      data => {
         this.lis = data;
-      }, error => console.log(error)
+      },
+      error => console.log(error)
     );
   }
-
-
 }
