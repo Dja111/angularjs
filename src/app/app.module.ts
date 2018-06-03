@@ -9,10 +9,10 @@ import { BearbeitungComponent } from './bearbeitung/bearbeitung.component';
 import { EintragComponent } from './eintrag/eintrag.component';
 import { PutComponent } from './put/put.component';
 import {RouterModule, Routes} from "@angular/router";
-import {DetailviewComponent} from "../../../versuch/src/app/detailview/detailview.component";
-import {WebsitelistComponent} from "../../../versuch/src/app/websitelist/websitelist.component";
-import {NotFoundComponent} from "../../../versuch/src/app/not-found/not-found.component";
-import {InfosComponent} from "../../../versuch/src/app/infos/infos.component";
+// import {DetailviewComponent} from "../../../versuch/src/app/detailview/detailview.component";
+// import {WebsitelistComponent} from "../../../versuch/src/app/websitelist/websitelist.component";
+// import {NotFoundComponent} from "../../../versuch/src/app/not-found/not-found.component";
+// import {InfosComponent} from "../../../versuch/src/app/infos/infos.component";
 import { HeaderComponent } from './header/header.component';
 
 
